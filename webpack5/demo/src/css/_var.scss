@@ -1,0 +1,34 @@
+/**
+ * function: _var
+ * author  : wq
+ * update  : 2018/8/27 15:10
+ */
+/**
+ * 间距处理
+ */
+$gap_big: 25px;
+$gap_normal: 20px;
+$gap_short: 10px;
+/**
+ * 字体控制
+ */
+$font_big: 32px;
+$font_normal: 28px;
+$font_small: 24px;
+
+@mixin setPadding($pad_t, $pad_r: $pad_t, $pad_b: $pad_t, $pad_l: $pad_r) {
+  padding-top: $pad_t;
+  padding-right: $pad_r;
+  padding-bottom: $pad_b;
+  padding-left: $pad_l;
+}
+
+@mixin setPaddingRL($pad_r: $gap_normal, $pad_l: $pad_r) {
+  padding-right: $pad_r;
+  padding-left: $pad_l;
+}
+
+@mixin setPaddingTB($pad_t: $gap_normal, $pad_b: $pad_t) {
+  padding-top: $pad_t;
+  padding-bottom: $pad_b;
+}
