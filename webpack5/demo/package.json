@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js",
+    "build": "webpack",
+    "build1": "node build/build.js",
     "dev": "webpack-dev-server --inline --progress --config build/dev-server.js",
     "start": "npm run dev"
   },
@@ -19,13 +20,22 @@
   "author": "jinlan",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "vue-loader": "^16.0.0-alpha.0",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^5.0.0-beta.11",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
     "flyio": "^0.6.1",
-    "mockjs": "^1.0.1-beta3",
-    "vue": "^2.5.17"
+    "vue": "^3.0.0-alpha.0"
   },
   "engines": {
     "node": ">= 8.0.0",

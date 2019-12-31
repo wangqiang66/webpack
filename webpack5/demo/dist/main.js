@@ -1,0 +1,1 @@
+(()=>{"use strict";new(void 0)({el:"#app",render:function(){var r=arguments[0];return r("div",{attrs:{id:"app"}},["Hi :)"])}})})();
