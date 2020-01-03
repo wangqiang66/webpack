@@ -9,6 +9,8 @@
       "corejs": 3
     }]
   ],
-  "plugins": ["transform-vue-jsx"],
+  "plugins": [
+    "transform-vue-jsx"
+  ],
   "comments": false
 }
